@@ -13,9 +13,9 @@ $cuerpo = '
 </head> 
 <body> 
 <h1>Datos del remitente!</h1> 
-<b>Nombre:</b>'.$nombre.'
-<b>Correo:</b>'.$correo.'
-<b>Telefono:</b>'.$telefono.'
+<b>Nombre:</b>'.$nombre.'<br>
+<b>Correo:</b>'.$correo.'<br>
+<b>Telefono:</b>'.$telefono.'<br>
 <b>Mensaje:</b>'.$mensaje.'
 </body> 
 </html> 
