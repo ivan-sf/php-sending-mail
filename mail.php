@@ -9,7 +9,7 @@ $destinatario = "ivansantander@gmail.com";
 $asunto = "Contacto Website Be4tech"; 
 $cuerpo = ' 
 <html> 
-<head> 
+<head>   
    <title>Han realizado una pregunta en be4tech</title> 
 </head> 
 <body> 
@@ -44,8 +44,8 @@ $headers .= "Bcc: $correo,ihosting14@gmail.com\r\n";
 
 
 if(mail($destinatario,$asunto,$cuerpo,$headers)){
-   echo"OK";
+   echo"ok";
 }else{
-   echo"ERROR";
+   echo"error";
 }
 ?>
