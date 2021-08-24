@@ -34,5 +34,11 @@ $headers .= "Cc: darisantander.02@gmail.com\r\n";
 //direcciones que recibirán copia oculta 
 $headers .= "Bcc: idsantanderfigueroa@gmail.com,ihosting14@gmail.com\r\n"; 
 
-mail($destinatario,$asunto,$cuerpo,$headers) 
+
+
+if(mail($destinatario,$asunto,$cuerpo,$headers)){
+   echo"OK";
+}else{
+   echo"ERROR";
+}
 ?>
