@@ -4,7 +4,7 @@ $correo = $_POST['correo'];
 $telefono = $_POST['telefono'];
 $mensaje = $_POST['mensaje'];
 
-$destinatario = "ivansantander2020@gmail.com"; 
+$destinatario = "idsantanderfigueroa@gmail.com"; 
 $asunto = "Contacto Website Be4tech"; 
 $cuerpo = ' 
 <html> 
@@ -13,10 +13,10 @@ $cuerpo = '
 </head> 
 <body> 
 <h1>Datos del remitente!</h1> 
-<b>Nombre:</b>'.$nombre.'<br>
-<b>Correo:</b>'.$correo.'<br>
-<b>Telefono:</b>'.$telefono.'<br>
-<b>Mensaje:</b>'.$mensaje.'
+<b>Nombre:</b> '.$nombre.'<br>
+<b>Correo:</b> '.$correo.'<br>
+<b>Telefono:</b> '.$telefono.'<br>
+<b>Mensaje:</b> '.$mensaje.'
 </body> 
 </html> 
 '; 
@@ -29,16 +29,16 @@ $headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
 $headers .= "From: Ivan Santander <$correo>\r\n"; 
 
 //dirección de respuesta, si queremos que sea distinta que la del remitente 
-$headers .= "Reply-To: idsantanderfigueroa@gmail.com\r\n"; 
+$headers .= "Reply-To: $correo\r\n"; 
 
 //ruta del mensaje desde origen a destino 
-$headers .= "Return-path: idsantanderfigueroa@gmail.com\r\n"; 
+$headers .= "Return-path: $correo\r\n"; 
 
 //direcciones que recibián copia 
-$headers .= "Cc: idsantanderfigueroa@gmail.com\r\n"; 
+$headers .= "Cc: $correo\r\n"; 
 
 //direcciones que recibirán copia oculta 
-$headers .= "Bcc: idsantanderfigueroa@gmail.com,ihosting14@gmail.com\r\n"; 
+$headers .= "Bcc: $correo,ihosting14@gmail.com\r\n"; 
 
 
 
