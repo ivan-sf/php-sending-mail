@@ -7,7 +7,7 @@ $cuerpo = '
    <title>Prueba de correo</title> 
 </head> 
 <body> 
-<h1>Hola amigos!</h1> 
+<h1>Hola mundo!</h1> 
 <p> 
 <b> Lorem ipsum dolor sit amet consectetur </b> adipisicing elit. Nulla velit, dignissimos hic suscipit, aut id eum temporibus assumenda tenetur ea rem aperiam, quidem animi. Voluptate vero aut porro eum totam!
 </p> 
