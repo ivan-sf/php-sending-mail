@@ -1,6 +1,6 @@
 <?php 
 $destinatario = "ivansantander2020@gmail.com"; 
-$asunto = "Este mensaje es de prueba"; 
+$asunto = "Titulo del mensaje"; 
 $cuerpo = ' 
 <html> 
 <head> 
@@ -9,7 +9,7 @@ $cuerpo = '
 <body> 
 <h1>Hola amigos!</h1> 
 <p> 
-<b>Bienvenidos a mi correo electrónico de prueba</b>. Estoy encantado de tener tantos lectores. Este cuerpo del mensaje es del artículo de envío de mails por PHP. Habría que cambiarlo para poner tu propio cuerpo. Por cierto, cambia también las cabeceras del mensaje. 
+<b> Lorem ipsum dolor sit amet consectetur </b> adipisicing elit. Nulla velit, dignissimos hic suscipit, aut id eum temporibus assumenda tenetur ea rem aperiam, quidem animi. Voluptate vero aut porro eum totam!
 </p> 
 </body> 
 </html> 
@@ -20,7 +20,7 @@ $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
 
 //dirección del remitente 
-$headers .= "From: Miguel Angel Alvarez <ivansantander2020@gmail.com>\r\n"; 
+$headers .= "From: Ivan Santander <ivansantander2020@gmail.com>\r\n"; 
 
 //dirección de respuesta, si queremos que sea distinta que la del remitente 
 $headers .= "Reply-To: ivansantander2020@gmail.com\r\n"; 
