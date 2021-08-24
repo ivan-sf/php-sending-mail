@@ -1,0 +1,50 @@
+<?php 
+$nombre = $_POST['nombre'];
+$correo = $_POST['correo'];
+$telefono = $_POST['telefono'];
+$mensaje = $_POST['mensaje'];
+
+$destinatario = "ivansantander2020@gmail.com"; 
+$asunto = "Contacto Website Be4tech"; 
+$cuerpo = ' 
+<html> 
+<head> 
+   <title>Han realizado una pregunta en be4tech</title> 
+</head> 
+<body> 
+<h1>Datos del remitente!</h1> 
+<b>Nombre:</b>'.$nombre.'
+<b>Correo:</b>'.$correo.'
+<b>Telefono:</b>'.$telefono.'
+<b>Mensaje:</b>'.$mensaje.'
+</body> 
+</html> 
+'; 
+
+//para el envío en formato HTML 
+$headers = "MIME-Version: 1.0\r\n"; 
+$headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
+
+//dirección del remitente 
+$headers .= "From: Ivan Santander <$correo>\r\n"; 
+
+//dirección de respuesta, si queremos que sea distinta que la del remitente 
+$headers .= "Reply-To: idsantanderfigueroa@gmail.com\r\n"; 
+
+//ruta del mensaje desde origen a destino 
+$headers .= "Return-path: idsantanderfigueroa@gmail.com\r\n"; 
+
+//direcciones que recibián copia 
+$headers .= "Cc: idsantanderfigueroa@gmail.com\r\n"; 
+
+//direcciones que recibirán copia oculta 
+$headers .= "Bcc: idsantanderfigueroa@gmail.com,ihosting14@gmail.com\r\n"; 
+
+
+
+if(mail($destinatario,$asunto,$cuerpo,$headers)){
+   echo"OK";
+}else{
+   echo"ERROR";
+}
+?>
